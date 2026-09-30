@@ -11,6 +11,10 @@ Frontend do projeto de TCC do grupo — e-commerce de streetwear e skate.
 - React Router DOM
 - CSS puro
 
+O Vite é só a ferramenta que cria e roda o projeto (o navegador não entende JSX
+sozinho). O código é React puro: se trocar a ferramenta, as páginas, os hooks e
+os componentes continuam os mesmos.
+
 ## Como rodar
 
 ```bash
