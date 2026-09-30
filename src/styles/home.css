@@ -1,8 +1,13 @@
 .banner {
   background-color: #000000;
-  border-bottom: 1px solid #222222;
+  border-bottom: 1px solid #2a0000;
   text-align: center;
-  padding: 80px 20px;
+  padding: 50px 20px 70px 20px;
+}
+
+.banner img {
+  width: 260px;
+  margin-bottom: 10px;
 }
 
 .banner h1 {
@@ -11,7 +16,7 @@
 }
 
 .banner p {
-  color: #e0ff00;
+  color: #ff2b2b;
   letter-spacing: 4px;
   font-size: 13px;
   margin: 10px 0 30px 0;
@@ -25,7 +30,7 @@
 
 .categoria {
   flex: 1;
-  background-color: #141414;
+  background-color: #121212;
   border: 1px solid #262626;
   padding: 30px;
   text-align: center;
@@ -35,5 +40,34 @@
 }
 
 .categoria:hover {
-  border-color: #e0ff00;
+  border-color: #e10600;
+  color: #ff2b2b;
+}
+
+.faixa-garantia {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: #121212;
+  border: 1px solid #2a0000;
+  border-left: 4px solid #e10600;
+  padding: 25px 30px;
+  margin-bottom: 50px;
+}
+
+.faixa-garantia img {
+  width: 130px;
+}
+
+.faixa-garantia h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.faixa-garantia p {
+  color: #b5b5b5;
+  font-size: 14px;
+  line-height: 1.6;
 }

@@ -3,6 +3,8 @@ import Layout from '../components/Layout'
 import CardProduto from '../components/CardProduto'
 import Botao from '../components/Botao'
 import { useProdutos } from '../hooks/useProdutos'
+import skateFogo from '../assets/skate-fogo.png'
+import mascote from '../assets/mascote.png'
 import '../styles/home.css'
 import '../styles/produtos.css'
 
@@ -13,6 +15,7 @@ function Home() {
   return (
     <Layout>
       <div className="banner">
+        <img src={skateFogo} alt="" />
         <h1>KARMA</h1>
         <p>O QUE VAI, VOLTA.</p>
         <Link to="/catalogo">
@@ -25,6 +28,17 @@ function Home() {
         <Link to="/catalogo" className="categoria">Camisetas</Link>
         <Link to="/catalogo" className="categoria">Tênis</Link>
         <Link to="/catalogo" className="categoria">Acessórios</Link>
+      </div>
+
+      <div className="faixa-garantia">
+        <img src={mascote} alt="" />
+        <div>
+          <h3>Garantia Karma</h3>
+          <p>
+            Rasgou ou quebrou nos primeiros dias de uso? A peça volta pra gente e você
+            recebe outra. É isso que a gente quer dizer com "o que vai, volta".
+          </p>
+        </div>
       </div>
 
       <h2 className="titulo-secao">Destaques da semana</h2>

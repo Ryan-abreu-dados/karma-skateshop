@@ -4,6 +4,7 @@ import Layout from '../components/Layout'
 import Botao from '../components/Botao'
 import { buscarProdutoPorId } from '../services/api'
 import { useCarrinho } from '../hooks/useCarrinho'
+import mascote from '../assets/mascote.png'
 import '../styles/produtos.css'
 
 const TAMANHOS = ['P', 'M', 'G', 'GG']
@@ -41,7 +42,10 @@ function Produto() {
   if (erro) {
     return (
       <Layout>
-        <div className="erro">{erro}</div>
+        <div className="aviso-vazio">
+          <img src={mascote} alt="" />
+          <p>{erro}</p>
+        </div>
       </Layout>
     )
   }

@@ -5,13 +5,13 @@
 }
 
 .card-produto {
-  background-color: #141414;
+  background-color: #121212;
   border: 1px solid #262626;
   padding: 10px;
 }
 
 .card-produto:hover {
-  border-color: #e0ff00;
+  border-color: #e10600;
 }
 
 .card-produto img {
@@ -27,7 +27,7 @@
 }
 
 .card-produto .preco {
-  color: #e0ff00;
+  color: #ff2b2b;
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -49,6 +49,12 @@
   border: 1px solid #333333;
   color: #ffffff;
   padding: 10px;
+}
+
+.filtros input:focus,
+.filtros select:focus {
+  outline: none;
+  border-color: #e10600;
 }
 
 .filtros select {
@@ -76,8 +82,9 @@
 }
 
 .detalhe-produto .info .preco {
-  color: #e0ff00;
+  color: #ff2b2b;
   font-size: 26px;
+  font-weight: bold;
   margin: 15px 0;
 }
 
@@ -103,15 +110,15 @@
 }
 
 .tamanhos button.ativo {
-  border-color: #e0ff00;
-  color: #e0ff00;
+  border-color: #e10600;
+  background-color: #e10600;
 }
 
 .linha-carrinho {
   display: flex;
   align-items: center;
   gap: 15px;
-  background-color: #141414;
+  background-color: #121212;
   border: 1px solid #262626;
   padding: 10px;
   margin-bottom: 10px;
@@ -129,7 +136,7 @@
 }
 
 .linha-carrinho .preco {
-  color: #e0ff00;
+  color: #ff2b2b;
   font-weight: bold;
 }
 
@@ -140,11 +147,21 @@
 }
 
 .total-carrinho span {
-  color: #e0ff00;
+  color: #ff2b2b;
   font-weight: bold;
 }
 
-.vazio {
+.aviso-vazio {
+  text-align: center;
+  padding: 30px 0 50px 0;
+}
+
+.aviso-vazio img {
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+.aviso-vazio p {
   color: #777777;
-  padding: 30px 0;
+  margin-bottom: 20px;
 }

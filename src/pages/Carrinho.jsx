@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Layout from '../components/Layout'
 import Botao from '../components/Botao'
 import { useCarrinho } from '../hooks/useCarrinho'
+import mascote from '../assets/mascote.png'
 import '../styles/produtos.css'
 
 function Carrinho() {
@@ -21,8 +22,9 @@ function Carrinho() {
       {mensagem && <p>{mensagem}</p>}
 
       {itens.length === 0 && !mensagem && (
-        <div>
-          <p className="vazio">Seu carrinho está vazio.</p>
+        <div className="aviso-vazio">
+          <img src={mascote} alt="" />
+          <p>Seu carrinho está vazio.</p>
           <Link to="/catalogo">
             <Botao>Ir para o catálogo</Botao>
           </Link>

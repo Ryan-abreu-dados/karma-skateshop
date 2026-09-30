@@ -3,26 +3,37 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #0b0b0b;
 }
 
 .caixa-login {
-  background-color: #141414;
-  border: 1px solid #262626;
+  position: relative;
+  background-color: #121212;
+  border: 1px solid #2a0000;
+  border-top: 3px solid #e10600;
   padding: 40px;
   width: 360px;
 }
 
-.caixa-login .logo {
-  text-align: center;
-  margin-bottom: 5px;
+.mascote-login {
+  position: absolute;
+  top: -130px;
+  right: -55px;
+  width: 150px;
+}
+
+.logo-imagem {
+  width: 100%;
+  display: block;
+  margin-bottom: 25px;
 }
 
 .caixa-login .frase {
   text-align: center;
   font-size: 11px;
-  color: #e0ff00;
+  color: #ff2b2b;
   letter-spacing: 3px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .caixa-login .botao {
@@ -39,11 +50,5 @@
 }
 
 .caixa-login .link-cadastro:hover {
-  color: #e0ff00;
-}
-
-.logo-imagem {
-  width: 100%;
-  display: block;
-  margin-bottom: 25px;
+  color: #ff2b2b;
 }

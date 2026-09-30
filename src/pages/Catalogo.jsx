@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Layout from '../components/Layout'
 import CardProduto from '../components/CardProduto'
 import { useProdutos } from '../hooks/useProdutos'
+import mascote from '../assets/mascote.png'
 import '../styles/produtos.css'
 
 function Catalogo() {
@@ -47,7 +48,10 @@ function Catalogo() {
       )}
 
       {!carregando && filtrados.length === 0 && (
-        <p className="vazio">Nenhum produto encontrado.</p>
+        <div className="aviso-vazio">
+          <img src={mascote} alt="" />
+          <p>Nenhum produto encontrado.</p>
+        </div>
       )}
     </Layout>
   )

@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #0e0e0e;
+  background-color: #0b0b0b;
   color: #ffffff;
 }
 
@@ -26,13 +26,13 @@ a {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 20px;
-  border-left: 4px solid #e0ff00;
+  border-left: 4px solid #e10600;
   padding-left: 10px;
 }
 
 .botao {
-  background-color: #e0ff00;
-  color: #0e0e0e;
+  background-color: #e10600;
+  color: #ffffff;
   border: none;
   padding: 12px 20px;
   font-size: 14px;
@@ -43,18 +43,18 @@ a {
 }
 
 .botao:hover {
-  background-color: #ffffff;
+  background-color: #ff2b2b;
 }
 
 .botao-secundario {
   background-color: transparent;
   color: #ffffff;
-  border: 1px solid #ffffff;
+  border: 1px solid #555555;
 }
 
 .botao-secundario:hover {
-  background-color: #ffffff;
-  color: #0e0e0e;
+  background-color: #e10600;
+  border-color: #e10600;
 }
 
 .campo {
@@ -80,12 +80,12 @@ a {
 
 .campo input:focus {
   outline: none;
-  border-color: #e0ff00;
+  border-color: #e10600;
 }
 
 .cabecalho {
   background-color: #000000;
-  border-bottom: 1px solid #222222;
+  border-bottom: 2px solid #e10600;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -99,7 +99,7 @@ a {
 }
 
 .cabecalho .menu a:hover {
-  color: #e0ff00;
+  color: #ff2b2b;
 }
 
 .logo {
@@ -110,7 +110,7 @@ a {
 
 .rodape {
   background-color: #000000;
-  border-top: 1px solid #222222;
+  border-top: 1px solid #2a0000;
   text-align: center;
   padding: 25px;
   font-size: 12px;
@@ -119,9 +119,9 @@ a {
 }
 
 .erro {
-  background-color: #3a0000;
-  border: 1px solid #ff5555;
-  color: #ff9999;
+  background-color: #2a0000;
+  border: 1px solid #e10600;
+  color: #ff8e8e;
   padding: 10px;
   font-size: 13px;
   margin-bottom: 15px;

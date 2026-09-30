@@ -4,6 +4,7 @@ import CampoTexto from '../components/CampoTexto'
 import Botao from '../components/Botao'
 import { useAuth } from '../hooks/useAuth'
 import logo from '../assets/logo.svg'
+import mascote from '../assets/mascote.png'
 import '../styles/login.css'
 
 function Login() {
@@ -26,6 +27,7 @@ function Login() {
   return (
     <div className="tela-login">
       <form className="caixa-login" onSubmit={enviar}>
+        <img src={mascote} alt="" className="mascote-login" />
         <img src={logo} alt="Karma Skateshop" className="logo-imagem" />
 
         {erro && <div className="erro">{erro}</div>}

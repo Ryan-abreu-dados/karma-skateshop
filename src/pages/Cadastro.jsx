@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import CampoTexto from '../components/CampoTexto'
 import Botao from '../components/Botao'
 import logo from '../assets/logo.svg'
+import mascote from '../assets/mascote.png'
 import '../styles/login.css'
 
 function Cadastro() {
@@ -40,6 +41,7 @@ function Cadastro() {
   return (
     <div className="tela-login">
       <form className="caixa-login" onSubmit={enviar}>
+        <img src={mascote} alt="" className="mascote-login" />
         <img src={logo} alt="Karma Skateshop" className="logo-imagem" />
         <p className="frase">CRIAR CONTA</p>
 
