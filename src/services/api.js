@@ -39,5 +39,12 @@ export async function buscarProdutoPorId(id) {
     throw new Error('Produto não encontrado')
   }
   const item = await resposta.json()
-  return converter(item, item.category)
+
+  const nomes = Object.keys(CATEGORIAS)
+  const categoria = nomes.find((nome) => CATEGORIAS[nome] === item.category)
+  if (!categoria) {
+    throw new Error('Produto não encontrado')
+  }
+
+  return converter(item, categoria)
 }
