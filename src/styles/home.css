@@ -1,0 +1,39 @@
+.banner {
+  background-color: #000000;
+  border-bottom: 1px solid #222222;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.banner h1 {
+  font-size: 48px;
+  letter-spacing: 10px;
+}
+
+.banner p {
+  color: #e0ff00;
+  letter-spacing: 4px;
+  font-size: 13px;
+  margin: 10px 0 30px 0;
+}
+
+.categorias {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.categoria {
+  flex: 1;
+  background-color: #141414;
+  border: 1px solid #262626;
+  padding: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
+.categoria:hover {
+  border-color: #e0ff00;
+}

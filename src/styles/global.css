@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #0e0e0e;
+  color: #ffffff;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.titulo-secao {
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  border-left: 4px solid #e0ff00;
+  padding-left: 10px;
+}
+
+.botao {
+  background-color: #e0ff00;
+  color: #0e0e0e;
+  border: none;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background-color: #ffffff;
+}
+
+.botao-secundario {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.botao-secundario:hover {
+  background-color: #ffffff;
+  color: #0e0e0e;
+}
+
+.campo {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.campo label {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: #b5b5b5;
+}
+
+.campo input {
+  background-color: #1a1a1a;
+  border: 1px solid #333333;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.campo input:focus {
+  outline: none;
+  border-color: #e0ff00;
+}
+
+.cabecalho {
+  background-color: #000000;
+  border-bottom: 1px solid #222222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.cabecalho .menu a {
+  margin-left: 20px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.cabecalho .menu a:hover {
+  color: #e0ff00;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 6px;
+}
+
+.rodape {
+  background-color: #000000;
+  border-top: 1px solid #222222;
+  text-align: center;
+  padding: 25px;
+  font-size: 12px;
+  color: #777777;
+  margin-top: 60px;
+}
+
+.erro {
+  background-color: #3a0000;
+  border: 1px solid #ff5555;
+  color: #ff9999;
+  padding: 10px;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.carregando {
+  text-align: center;
+  padding: 40px;
+  color: #777777;
+}
